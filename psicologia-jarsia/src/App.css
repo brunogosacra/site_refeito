@@ -1,0 +1,177 @@
+:root {
+  --bg-color: #0d0d12;         
+  --card-bg: #161622;         
+  --purple-primary: #8a2be2;   
+  --purple-secondary: #6a0dad; 
+  --blue-primary: #00d4ff;     
+  --blue-secondary: #0056b3;   
+  --text-light: #f4f4f9;       
+  --text-muted: #a0a0b8;      
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-light);
+  line-height: 1.6;
+}
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 5%;
+  background: rgba(22, 22, 34, 0.85);
+  backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid rgba(138, 43, 226, 0.3);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: var(--text-light);
+}
+
+.logo span {
+  color: var(--blue-primary);
+}
+
+.navbar nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navbar a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: var(--blue-primary);
+}
+
+.btn-nav {
+  background: linear-gradient(135deg, var(--purple-primary), var(--blue-secondary));
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+}
+
+
+.hero {
+  height: 75vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: radial-gradient(circle at center, rgba(138, 43, 226, 0.25) 0%, rgba(13, 13, 18, 1) 70%);
+  padding: 0 1rem;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content h1 span {
+  background: linear-gradient(90deg, var(--purple-primary), var(--blue-primary));
+  background-clip: text;-webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  color: var(--text-muted);
+  max-width: 650px;
+  margin: 0 auto 2rem auto;
+}
+
+.btn-primary {
+  display: inline-block;
+  padding: 0.8rem 2.2rem;
+  background: linear-gradient(90deg, var(--purple-primary), var(--blue-primary));
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 30px;
+  box-shadow: 0 4px 15px rgba(138, 43, 226, 0.4);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 212, 255, 0.5);
+}
+
+
+.steps-section {
+  padding: 4rem 5%;
+  text-align: center;
+}
+
+.steps-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  color: var(--text-light);
+}
+
+.steps-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.step-card {
+  background-color: var(--card-bg);
+  padding: 2.5rem 1.5rem;
+  border-radius: 15px;
+  border: 1px solid rgba(138, 43, 226, 0.3);
+  position: relative;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.step-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--blue-primary);
+}
+
+.step-number {
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--blue-primary);
+  margin-bottom: 1rem;
+}
+
+.step-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+  color: var(--purple-primary);
+}
+
+.step-card p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--card-bg);
+  border-top: 1px solid rgba(138, 43, 226, 0.2);
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
