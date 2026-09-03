@@ -170,7 +170,6 @@ function App() {
         <nav>
           <ul>
             <li><a href="#inicio" className={secaoAtiva === 'inicio' ? 'active-link' : ''} onClick={(e) => handleNavClick(e, 'inicio')}>Início</a></li>
-            <li><a href="#passos" className={secaoAtiva === 'passos' ? 'active-link' : ''} onClick={(e) => handleNavClick(e, 'passos')}>Passos</a></li>
             <li><a href="#galeria" className={secaoAtiva === 'galeria' ? 'active-link' : ''} onClick={(e) => handleNavClick(e, 'galeria')}>Galeria</a></li>
             <li><a href="#membros" className={secaoAtiva === 'membros' ? 'active-link' : ''} onClick={(e) => handleNavClick(e, 'membros')}>Membros</a></li>
             {usuarioLogado ? (
